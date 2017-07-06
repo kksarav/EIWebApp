@@ -1,14 +1,14 @@
-import { EIWebAppPage } from './app.po';
+import { MaterialDashboardAngularPage } from './app.po';
 
-describe('eiweb-app App', () => {
-  let page: EIWebAppPage;
+describe('material-dashboard-angular App', () => {
+  let page: MaterialDashboardAngularPage;
 
   beforeEach(() => {
-    page = new EIWebAppPage();
+    page = new MaterialDashboardAngularPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
